@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PolyPaint</string>
+    <string name="ipAddress">IP Address (Ex: 127.0.0.1)</string>
+    <string name="sign_in">Sign in</string>
+    <string name="username">Username</string>
+    <string name="input_placeholder">Write a message</string>
+    <string name="title_activity_recycler_view">RecyclerView</string>
+    <string name="title_activity_chat_aactivty">ChatAActivty</string>
+    <string name="action_settings">Logout</string>
+</resources>

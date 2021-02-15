@@ -1,0 +1,18 @@
+﻿<!-- 
+        Source : https://www.codeproject.com/Articles/23871/WPF-Diagram-Designer-Part
+        Author : sukram 
+        Date : 29 Feb 2008
+-->
+
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:PolyPaint"
+                    xmlns:c="clr-namespace:PolyPaint">
+    <s:Toolbox x:Key="SymbolStencils" ItemSize="60,60">
+        <ItemsControl.Items>
+            <Image IsHitTestVisible="False" Stretch="Fill" Source="../Images/Activity.png"/>
+            <Image IsHitTestVisible="False" Stretch="Fill" Source="../Images/Role.png"/>
+            <Image IsHitTestVisible="False" Stretch="Fill" Source="../Images/Artefact.png"/>
+        </ItemsControl.Items>
+    </s:Toolbox>
+</ResourceDictionary>

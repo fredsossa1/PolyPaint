@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="PolyPaint.Phase"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PolyPaint"
+             mc:Ignorable="d" 
+             d:DesignHeight="125" d:DesignWidth="175"
+             MinHeight="125" MinWidth="175">
+    <Grid x:Name="myGrid">
+        <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="5*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="0" Grid.RowSpan="2" 
+                   Width="{Binding Path=Width, ElementName=myGrid}"
+                   Height="{Binding Path=Height, ElementName=myGrid}"
+                   MinHeight="125" MinWidth="175"
+                   StrokeThickness="1" Stroke="Black" 
+                   IsHitTestVisible="False"/>
+
+        <!-- Phase name -->
+
+        <TextBox x:Name="phaseName" Grid.Row="0" BorderBrush="Black" Text="Phase" TextAlignment="Center" VerticalAlignment="Bottom" MouseLeave="TextBox_MouseLeave"/>
+
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,63 @@
+﻿<Window x:Class="PolyPaint.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:PolyPaint"
+        mc:Ignorable="d"
+        Title="PolyPaint Pro" MinHeight="450" Width="800" FontFamily="Champagne &amp; Limousines">
+    <StackPanel>
+        <!-- App Name -->
+        <TextBlock  Margin="280,50,280,0" FontSize="30">PolyPaint Pro</TextBlock>
+
+
+        <!-- Username -->
+        <!-- add binding -->
+        <Grid Margin="0,50,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Margin="150,0,0,0" FontSize="14">Username :</TextBlock>
+            <TextBox Grid.Column="1" Margin="0,0,250,0" x:Name="userName"></TextBox>
+        </Grid>
+
+
+        <!-- Password -->
+        <!-- add binding - change to passwordbox ? -->
+        <Grid Margin="0,20,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Margin="150,0,0,0" FontSize="14">Password:</TextBlock>
+            <PasswordBox PasswordChar="*" Grid.Column="1" Margin="0.2,0,251.6,10.2" x:Name="Password_Box" />
+        </Grid>
+
+        <!-- Password -->
+        <!-- add binding - change to passwordbox ? -->
+        <Grid x:Name="ServerIpInput" Visibility="Collapsed" Margin="0,20,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Margin="150,0,0,0" FontSize="14">Server IP:</TextBlock>
+            <TextBox Grid.Column="1" Margin="0.2,0,251.6,10.2" x:Name="IpAddress_Box" />
+        </Grid>
+        
+        <!-- Buttons -->
+        <!-- Add click event to log in button -->
+        <Grid Margin="250,40,250,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" x:Name="ConnectButton" Margin="50,5,50,5" Click="Connect_Click" >Sign In</Button>
+            <Button Grid.Row="1" x:Name="SignUpButton" Margin="50,5,50,5" Click="SignUpButton_Click">Sign Up</Button>
+            <Button Grid.Row="2" Margin="50,5,50,5" Click="Offline_Click">Work OffLine</Button>
+        </Grid>
+
+    </StackPanel>
+</Window>
